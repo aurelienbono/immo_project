@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../static/reser.css">
+    </head>
+    <body>
+      <div class="row">
+    <div class="col-md-12">
+      <form action="index.html" method="post">
+        <h1> Reservation </h1>
+        
+        <fieldset>
+          
+          <legend><span class="number">1</span>Vos informations de base</legend>
+        
+          <label for="name">Nom:</label>
+          <input type="text" id="name" name="user_name">
+        
+          <label for="email">E-mail:</label>
+          <input type="email" id="mail" name="user_email">
+       
+          <label for="password">Mot de passe::</label>
+          <input type="password" id="password"       name="user_password">
+        
+          <label>Age:</label>
+          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Moins de 18 ans </label><br>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">Plus de 18 ans</label>
+          
+        </fieldset>
+        <fieldset>  
+        
+          <legend><span class="number">2</span>Votre profil</legend>
+          
+         <label for="bio">Bio:</label>
+          <textarea id="bio" name="user_bio"></textarea>
+        
+       
+        
+         <label for="job">Type Logement:</label>
+          <select id="job" name="user_job">
+            <optgroup label="Web">
+              <option value="frontend_developer">Appartement 1</option>
+              <option value="php_developer">Appartement 1</option>
+              <option value="python_developer">Appartement 1</option>
+              <option value="rails_developer">Appartement 1</option>
+              <option value="web_designer">Appartement 1</option>
+              <option value="wordpress_developer">Appartement 1</option>
+            </optgroup>
+            <optgroup label="Mobile">
+              <option value="android_developer">Studio 1</option>
+              <option value="ios_developer">Studio 1</option>
+              <option value="mobile_designer">Studio 1</option>
+            </optgroup>
+            <optgroup label="Business">
+              <option value="business_owner">Chambre 1</option>
+              <option value="freelancer">Chambre 1</option>
+            </optgroup>
+          </select>
+          
+          <label>Intérêts:</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>
+          <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
+          
+         </fieldset>
+       
+        <button type="submit">Reserver</button>
+        
+       </form>
+        </div>
+      </div>
+      
+    </body>
+</html>
